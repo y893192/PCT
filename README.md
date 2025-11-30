@@ -1,5 +1,19 @@
 # Refining Pseudo Labeling with Multi-Scale Consistency Matching for Contrastive Domain Adaptive Object Detection
 This is the implementation of our paper: Refining Pseudo Labeling with Multi-Scale Consistency Matching for Contrastive Domain Adaptive Object Detection.
 
+> :warning: Note: The source code is currently incomplete and will be fully released once the manuscript is accepted by the journal.
+> 
 ## the Framework of the Proposed PCT
 ![Model Architecture](model.png)
+
+## Requirements
+
+## Datasets
+Experiments on 4 image datasets: Cityscapes, Foggy Cityscapes, KITTI, Sim10k
+
+## Usage
+
+## Main Results
+
+Citing PCT
+
