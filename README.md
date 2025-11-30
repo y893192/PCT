@@ -13,23 +13,56 @@ This is the implementation of our paper: **Refining Pseudo Labeling with Multi-S
 - OS: CentOS 7
 - Python: 3.9.21
 - CUDA: 11.3
-- Detectron2: 0.5
-  
-## Datasets
+- PyTorch: 1.12.1
+- Torchvision: 0.13.1
+### Build Detectron2 from Source
+Follow the [INSTALL.md](https://github.com/facebookresearch/detectron2/blob/main/INSTALL.md) to install Detectron2. We use version: detectron2==0.5
+
+## Dataset
 Experiments on 4 image datasets: Cityscapes, Foggy Cityscapes, KITTI, Sim10k.
+### Download the datasets
 | # | Datasets | Download |
 |:--:|:-------:|:--------:|
-| 1  |Cityscapes | [Link]()   |
-| 2  |Foggy Cityscapes| [Link]()   |
-| 3  |KITTI | [Link]()   |
-| 4  |Sim10k | [Link]()   |
+| 1  |Cityscapes | [Link](https://www.cityscapes-dataset.com/)   |
+| 2  |Foggy Cityscapes| [Link](https://www.cityscapes-dataset.com/)   |
+| 3  |KITTI | [Link](https://www.cvlibs.net/datasets/kitti/)   |
+| 4  |Sim10k | [Link](https://fcav.engin.umich.edu/projects/driving-in-the-matrix)   |
+### Organize the dataset as the Cityscapes and PASCAL VOC format
+path/to/your/project/
+└── datasets/
+    ├── cityscapes/
+    │   ├── gtFine/
+    │   │   ├── train/
+    │   │   ├── test/
+    │   │   └── val/
+    │   └── leftImg8bit/
+    │       ├── train/
+    │       ├── test/
+    │       └── val/
+    ├── cityscapes_foggy/
+    │   ├── gtFine/
+    │   │   ├── train/
+    │   │   ├── test/
+    │   │   └── val/
+    │   └── leftImg8bit/
+    │       ├── train/
+    │       ├── test/
+    │       └── val/
+    ├── kitti/
+    │   ├── Annotations/
+    │   ├── ImageSets/
+    │   └── JPEGImages/
+    └── sim/
+        ├── Annotations/
+        ├── ImageSets/
+        └── JPEGImages/
 
-## Usage
-### Training
 
-### Resume the training
+## Training
 
-### Evaluation
+## Resume the training
+
+## Evaluation
 
 ## Main Results
 
