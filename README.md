@@ -60,7 +60,7 @@ pct/
 ```
 
 ## Training
-``` python
+``` bash
 python train_net.py \
       --num-gpus 1 \
       --config configs/faster_rcnn_VGG_cross_city.yaml \
@@ -68,7 +68,7 @@ python train_net.py \
 ```
 
 ## Resume the training
-``` python
+``` bash
 python train_net.py \
       --resume \
       --num-gpus 1 \
@@ -76,15 +76,13 @@ python train_net.py \
 ```
 
 ## Evaluation
-``` python
+``` bash
 python train_net.py \
       --eval-only \
       --num-gpus 1 \
       --config configs/faster_rcnn_VGG_cross_city.yaml \
       MODEL.WEIGHTS <your weight>.pth
 ```
-
-## Main Results
 
 ## Acknowledgment
 We are very grateful for these excellent works: [AT](https://github.com/facebookresearch/adaptive_teacher), [CMT](https://github.com/Shengcao-Cao/CMT/tree/main/CMT_AT), [2PCNet](https://github.com/mecarill/2pcnet), [MoCo](https://github.com/facebookresearch/moco), [Detectron2](https://github.com/facebookresearch/detectron2). Please follow their respective licenses for usage and redistribution. Thanks for their awesome works.
