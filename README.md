@@ -27,9 +27,9 @@ Experiments on 4 image datasets: Cityscapes, Foggy Cityscapes, KITTI, Sim10k.
 | 2  |Foggy Cityscapes| [Link](https://www.cityscapes-dataset.com/)   |
 | 3  |KITTI | [Link](https://www.cvlibs.net/datasets/kitti/)   |
 | 4  |Sim10k | [Link](https://fcav.engin.umich.edu/projects/driving-in-the-matrix)   |
-### Organize the dataset as the Cityscapes and PASCAL VOC format
+### Organize the dataset as the Cityscapes and PASCAL VOC format following:
 ```text  
-path/to/your/project/
+pct/
 └── datasets/
     ├── cityscapes/
     │   ├── gtFine/
@@ -60,10 +60,29 @@ path/to/your/project/
 ```
 
 ## Training
+``` python
+python train_net.py \
+      --num-gpus 1 \
+      --config configs/faster_rcnn_VGG_cross_city.yaml \
+      OUTPUT_DIR outputs/c2f
+```
 
 ## Resume the training
+``` python
+python train_net.py \
+      --resume \
+      --num-gpus 1 \
+      --config configs/faster_rcnn_VGG_cross_city.yaml MODEL.WEIGHTS <your weight>.pth
+```
 
 ## Evaluation
+``` python
+python train_net.py \
+      --eval-only \
+      --num-gpus 1 \
+      --config configs/faster_rcnn_VGG_cross_city.yaml \
+      MODEL.WEIGHTS <your weight>.pth
+```
 
 ## Main Results
 
