@@ -6,17 +6,23 @@ This is the implementation of our paper: **Refining Pseudo Labeling with Multi-S
 
 > :exclamation: Note: The source code is currently incomplete and will be fully released once the manuscript is accepted by the journal.
 > 
-## the Framework of the Proposed PCT
+## the Framework of the Proposed Module
 ![Model Architecture](model.png)
 
-## Requirements
-- OS:
-- Python:
-- CUDA:
-- 
+## Preparation
+- OS: CentOS 7
+- Python: 3.9.21
+- CUDA: 11.3
+- Detectron2: 0.5
+  
 ## Datasets
 Experiments on 4 image datasets: Cityscapes, Foggy Cityscapes, KITTI, Sim10k.
-
+| # | Datasets | Download |
+|:--:|:-------:|:--------:|
+| 1  |Cityscapes | [Link]()   |
+| 2  |Foggy Cityscapes| [Link]()   |
+| 3  |KITTI | [Link]()   |
+| 4  |Sim10k | [Link]()   |
 
 ## Usage
 ### Training
