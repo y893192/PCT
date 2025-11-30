@@ -28,6 +28,7 @@ Experiments on 4 image datasets: Cityscapes, Foggy Cityscapes, KITTI, Sim10k.
 | 3  |KITTI | [Link](https://www.cvlibs.net/datasets/kitti/)   |
 | 4  |Sim10k | [Link](https://fcav.engin.umich.edu/projects/driving-in-the-matrix)   |
 ### Organize the dataset as the Cityscapes and PASCAL VOC format
+```text  
 path/to/your/project/
 └── datasets/
     ├── cityscapes/
@@ -56,7 +57,7 @@ path/to/your/project/
         ├── Annotations/
         ├── ImageSets/
         └── JPEGImages/
-
+```
 
 ## Training
 
