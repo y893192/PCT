@@ -9,16 +9,17 @@ This is the implementation of our paper: **Refining Pseudo Labeling with Multi-S
 ## the Framework of the Proposed PCT
 ![Model Architecture](model.png)
 
-## Requirements
+## :tools: Requirements
 
-## Datasets
+## :database: Datasets
 Experiments on 4 image datasets: Cityscapes, Foggy Cityscapes, KITTI, Sim10k
 
-## Usage
+## :rocket: Usage
 
 ## Main Results
 
-:link: We are very grateful for these excellent works: [AT](https://github.com/facebookresearch/adaptive_teacher), [CMT](https://github.com/Shengcao-Cao/CMT/tree/main/CMT_AT), [2PCNet](https://github.com/mecarill/2pcnet), [MoCo](https://github.com/facebookresearch/moco), [Detectron2](https://github.com/facebookresearch/detectron2). Please follow their respective licenses for usage and redistribution. Thanks for their awesome works.
+## :link: Acknowledgment
+We are very grateful for these excellent works: [AT](https://github.com/facebookresearch/adaptive_teacher), [CMT](https://github.com/Shengcao-Cao/CMT/tree/main/CMT_AT), [2PCNet](https://github.com/mecarill/2pcnet), [MoCo](https://github.com/facebookresearch/moco), [Detectron2](https://github.com/facebookresearch/detectron2). Please follow their respective licenses for usage and redistribution. Thanks for their awesome works.
 
 ## :email: Contact
 Feel free to contact me if there is any question. (yuanyan@stu.ouc.edu.cn)
