@@ -85,7 +85,7 @@ python train_net.py \
 ```
 
 ## Acknowledgment
-We are very grateful for these excellent works: [AT](https://github.com/facebookresearch/adaptive_teacher), [CMT](https://github.com/Shengcao-Cao/CMT/tree/main/CMT_AT), [2PCNet](https://github.com/mecarill/2pcnet), [MoCo](https://github.com/facebookresearch/moco), [Detectron2](https://github.com/facebookresearch/detectron2). Please follow their respective licenses for usage and redistribution. Thanks for their awesome works.
+We are very grateful for these excellent works: [AT](https://github.com/facebookresearch/adaptive_teacher), [CMT](https://github.com/Shengcao-Cao/CMT), [2PCNet](https://github.com/mecarill/2pcnet), [MoCo](https://github.com/facebookresearch/moco), [Detectron2](https://github.com/facebookresearch/detectron2). Please follow their respective licenses for usage and redistribution. Thanks for their awesome works.
 
 ## Contact
 Feel free to contact me if there is any question. (yuanyan@stu.ouc.edu.cn)
