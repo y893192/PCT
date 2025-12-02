@@ -1,4 +1,5 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
+# --------------------------------------------------------------------------------------------------------------------
 from detectron2.checkpoint.c2_model_loading import align_and_update_state_dicts
 from detectron2.checkpoint import DetectionCheckpointer
 
