@@ -10,12 +10,8 @@ def add_ateacher_config(cfg):
     _C.TEST.VAL_LOSS = True
     
     _C.MODEL.RPN.UNSUP_LOSS_WEIGHT = 1.0
-    _C.MODEL.RPN.BBOX_REG_WEIGHTS = (1.0, 1.0, 1.0, 1.0) 
     _C.MODEL.RPN.LOSS = "CrossEntropy"
     _C.MODEL.ROI_HEADS.LOSS = "CrossEntropy"
-    # _C.MODEL.ANCHOR_GENERATOR.SIZES = [[32]]
-    # _C.MODEL.ANCHOR_GENERATOR.ASPECT_RATIOS = [[0.5, 1.0, 2.0]]
-    # _C.MODEL.ANCHOR_GENERATOR.STRIDES = [16] 
 
     _C.SOLVER.IMG_PER_BATCH_LABEL = 1
     _C.SOLVER.IMG_PER_BATCH_UNLABEL = 1
@@ -30,8 +26,7 @@ def add_ateacher_config(cfg):
 
     # Output dimension of the MLP projector after `res5` block
     _C.SEMISUPNET.MLP_DIM = 128
-
-    # Semi-supervised training
+    
     _C.SEMISUPNET.Trainer = "ateacher"
     _C.SEMISUPNET.BBOX_THRESHOLD = 0.7
     _C.SEMISUPNET.PSEUDO_BBOX_SAMPLE = "thresholding"
@@ -45,13 +40,9 @@ def add_ateacher_config(cfg):
     _C.SEMISUPNET.DIS_LOSS_WEIGHT = 0.1
     _C.SEMISUPNET.CONSISTENCY_LOSS_WEIGHT = 0.3
     _C.SEMISUPNET.SCALE_LIST = (0.5, 0.6, 0.7,0.8,0.9,1.0)
-    _C.SEMISUPNET.SCALE_STEPS = (57000,64000,71000,78000,85000,92000)
-
-    _C.SEED = 123
+    _C.SEMISUPNET.SCALE_STEPS = (87000,94000,101000,108000,115000,122000)
     _C.STUDENT_SCALE = True
     _C.CONSISTENCY = True
-    
-    # CMT configs
     _C.SEMISUPNET.CONTRASTIVE = True
     _C.SEMISUPNET.CONTRASTIVE_LOSS_WEIGHT = 0.05
 
