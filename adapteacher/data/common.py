@@ -1,4 +1,6 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
+# --------------------------------------------------------------------------------------------------------------------
+import os
 import logging
 from detectron2.data.common import MapDataset, AspectRatioGroupedDataset
 
