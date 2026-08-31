@@ -86,11 +86,11 @@ We are very grateful for these excellent works: [AT](https://github.com/facebook
 
 ## Citation
 If you find this work useful, please cite:
-``` bash
+```bibtex
 @article{Yuan2026PCT, 
 title={Refining Pseudo Labeling with Multi-Scale Consistency Matching for Contrastive Domain Adaptive Object Detection}, 
-journal={Neurocomputing}​,
-author={Yan Yuan, Xiaodong Wang, Lei Huang}, 
+journal={Neurocomputing},
+author = {Yuan, Yan and Wang, Xiaodong and Huang, Lei}, 
 year={2026} 
 }
 ```
