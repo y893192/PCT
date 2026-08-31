@@ -392,7 +392,7 @@ class DAobjTwoStagePseudoLabGeneralizedRCNN(GeneralizedRCNN):
             )
             storage.put_image(vis_name, vis_img)
 
-            save_dir = "/home/haida/kjz/haha/some/cmt/CMT_AT/save/city_atcmt_0526_02/vis_outputs"
+            save_dir = "/path/to/dir/vis_out"
             os.makedirs(save_dir, exist_ok=True)
 
             save_path = os.path.join(save_dir, f"vis_{branch}_{storage.iter}.png")
